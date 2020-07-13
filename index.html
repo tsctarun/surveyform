@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Survey Form
+        </title>
+        <style>
+            body{
+                background-image:url("https://webcomicms.net/sites/default/files/clipart/154517/free-moving-images-154517-8600119.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                opacity: 0.8;
+            }
+            #title{
+                color:#fff;
+                text-align:center;
+                margin:4% 0;
+            }
+            #description{
+                font-size:22px;
+            }
+            #survey-form{
+                background-color: #3e0553;
+                margin:2% 20%;
+            }
+            #name,#email,#age,#number,#dropdown,#message,#submit{
+                padding:12px;
+                margin-top:10px;
+                width:95%;
+                border-radius:5px;
+                font-size: 20px;
+            }
+            section{
+                font-size:20px;
+                padding:2% 4%;
+                color:#fff;
+            }
+            #yr1,#yr2,#moreyr,#study,#coaching,#other{
+                margin-top:2%;
+                margin-right:10px;
+                width:1.4em;
+                height:1.4em;
+                font-size:13px;
+            }
+            textarea{
+                margin-top:2%;
+                font-size:17px;
+            }
+            #name-section{
+                padding-top: 5%;
+            }
+            #submit{
+                background-color:rgb(23, 241, 107);
+                width:100%;
+                margin-bottom:4%;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="title">
+            <h1>Gadgets Survey Form</h1>
+            <p id="description">Thankyou for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+            <section id="name-section">
+            <label for="name" id="name-label">Name:</label><br>
+            <input type="text" id="name" name="Name" placeholder="Enter your Name"><br>
+            </section>
+            <section>
+            <label for="email" id="email-label">Email:</label><br>
+            <input type="email" id="email" name="E-mail" placeholder="Enter your Email"><br>
+            </section>
+            <section>
+            <label for="age" id="age-label">Age:</label><br>
+            <input type="number" id="age" name="Age" placeholder="Age" min="12" max="100"><br>
+            </section>
+            <section>
+            <label for="number" id="number-label">Mobile No.:</label><br>
+            <input type="number" id="number" name="Number" min="99999999" max="9999999999" placeholder="Enter Your Mobile No."><br>
+        </section>
+        <section>
+            <label for="Favourite-Gadget" id="favourite-gadgets">Which one is your favourite gadget?</label><br>
+            <select value="Select an option" id="dropdown">
+                <option value="Select an option">Select an option</option>
+                <option value="Mobile Phones">Mobile Phones
+                </option>
+                <option value="Tablets">Tablets
+                </option>
+                <option value="Laptops">Laptops</option>
+            </select>
+            <br></section>
+            <section>
+            <label for="warranty" id="warranty">How much Warranty you want from us?</label><br>
+            <input type="radio" id="yr1" name="year">1 Year<br>
+            <input type="radio" id="yr2" name="year">2 Year<br>
+            <input type="radio" id="moreyr" name="year">More than 2 Years<br>
+        </section>
+        <section>
+            <label for="customer" id="customer">What Type of work you have with the gadgets?</label><br>
+            <input type="checkbox" name="study" id="study">Study<br>
+            <input type="checkbox" name="coaching" id="coaching">Coaching<br>
+            <input type="checkbox" name="other" id="other">Other<br>
+        </section>
+        <section>
+            <label for="message" id="message">Any comments or suggestions?</label><br>
+            <textarea cols="72" rows="8" placeholder="Enter your comment here..."></textarea><br>
+        </section>
+        <section>
+            <button type="submit" id="submit">Submit</button>
+        </section>
+        </form>
+    </body>
+</html>
