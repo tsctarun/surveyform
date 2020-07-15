@@ -4,11 +4,13 @@
         <title>
             Survey Form
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body{
                 background-image:url("https://webcomicms.net/sites/default/files/clipart/154517/free-moving-images-154517-8600119.jpg");
                 background-attachment: fixed;
                 background-repeat: no-repeat;
+                background-size: cover;
                 opacity: 0.8;
             }
             #title{
@@ -22,6 +24,7 @@
             #survey-form{
                 background-color: #3e0553;
                 margin:2% 20%;
+                width:60%;
             }
             #name,#email,#age,#number,#dropdown,#message,#submit{
                 padding:12px;
@@ -53,6 +56,19 @@
                 background-color:rgb(23, 241, 107);
                 width:100%;
                 margin-bottom:4%;
+            }
+            @media (max-width: 450px){
+            	textarea{
+            		width:90%;
+            	}
+            	 #survey-form{
+            	 	margin:2% 13%;
+            	 	width:75%;
+            	 	padding:2%;
+            	 }
+            	#name,#email,#age,#number,#dropdown,#message,#submit{
+            		padding:8px 7px;
+            	}
             }
         </style>
     </head>
